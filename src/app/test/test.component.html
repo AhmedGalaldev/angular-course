@@ -1,1 +1,7 @@
 <p>test works!</p>
+
+<input [id]="myId" type="text" value="Ahmed" />
+<input id="{{ myId }}" type="text" value="Ahmed" />
+<br />
+<input [disabled]="isDisabled" type="text" value="Ahmed" />
+<input bind-disabled="isDisabled" type="text" value="Ahmed" />
