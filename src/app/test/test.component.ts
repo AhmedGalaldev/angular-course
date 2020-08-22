@@ -6,13 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test.component.css'],
 })
 export class TestComponent implements OnInit {
-  public name = 'Ahmed';
-  public url = window.location.href;
+  public myId = 'abc';
+  public isDisabled = true;
   constructor() {}
 
   ngOnInit(): void {}
-
-  greetingUser() {
-    return `Hello ${this.name}`;
-  }
 }
