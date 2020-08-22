@@ -1,7 +1,4 @@
 <p>test works!</p>
-
-<input [id]="myId" type="text" value="Ahmed" />
-<input id="{{ myId }}" type="text" value="Ahmed" />
-<br />
-<input [disabled]="isDisabled" type="text" value="Ahmed" />
-<input bind-disabled="isDisabled" type="text" value="Ahmed" />
+<!-- <h1 class="text-success">class binding</h1> -->
+<!-- <h1 [class.text-error]="hasError">class binding</h1> -->
+<h1 [ngClass]="messageClass">class binding</h1>
