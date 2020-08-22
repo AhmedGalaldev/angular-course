@@ -6,9 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test.component.css'],
 })
 export class TestComponent implements OnInit {
-  public myId = 'abc';
-  public isDisabled = true;
   constructor() {}
+  public successClass = 'text-success';
+  public hasError = true;
+  public hasSpetial = true;
 
+  public messageClass = {
+    'text-error': this.hasError,
+    'text-spetial': this.hasSpetial,
+  };
   ngOnInit(): void {}
 }
