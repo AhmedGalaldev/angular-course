@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { getCurrencySymbol } from '@angular/common';
 
 @Component({
   selector: 'app-test',
@@ -6,14 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test.component.css'],
 })
 export class TestComponent implements OnInit {
-  constructor() {}
-  public successClass = 'text-success';
   public hasError = true;
-  public hasSpetial = true;
-
-  public messageClass = {
-    'text-error': this.hasError,
-    'text-spetial': this.hasSpetial,
+  public highlightColor = 'blue';
+  titleStyle = {
+    color: 'green',
+    fontStyle: 'italic',
   };
+  constructor() {}
   ngOnInit(): void {}
 }
