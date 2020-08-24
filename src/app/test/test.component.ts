@@ -7,12 +7,13 @@ import { getCurrencySymbol } from '@angular/common';
   styleUrls: ['./test.component.css'],
 })
 export class TestComponent implements OnInit {
-  public hasError = true;
-  public highlightColor = 'blue';
-  titleStyle = {
-    color: 'green',
-    fontStyle: 'italic',
-  };
+  greeting = '';
+  name = 'Ahmed';
   constructor() {}
   ngOnInit(): void {}
+
+  onClick(event) {
+    console.log(event);
+    this.greeting = 'Welcome ' + this.name;
+  }
 }
