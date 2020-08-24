@@ -1,3 +1,2 @@
-<button (click)="onClick($event)">click Me</button>
-<h1 [style.color]="'green'">{{ greeting }}</h1>
-<button (click)="greeting = 'Welcome Ahmed'">click</button>
+<input type="text" #myIputRef />
+<button (click)="logMessage(myIputRef.value)">log</button>
