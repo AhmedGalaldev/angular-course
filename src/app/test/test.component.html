@@ -1,14 +1,5 @@
-<!-- <h1 *ngIf="true">Ahmed</h1> -->
-<!-- <h1 *ngIf="displayName; else elseRef">True</h1>
-<ng-template #elseRef>
-  <h2>false</h2>
-</ng-template> -->
-
-<div *ngIf="displayName; then thenRef; else elseRef"></div>
-
-<ng-template #thenRef>
-  <h2>Then block</h2>
-</ng-template>
-<ng-template #elseRef>
-  <h2>Else block</h2>
-</ng-template>
+<div [ngSwitch]="color">
+  <div *ngSwitchCase="'red'" [style.color]="'red'">red</div>
+  <div *ngSwitchCase="'green'" [style.color]="'green'">green</div>
+  <div *ngSwitchDefault>default</div>
+</div>
