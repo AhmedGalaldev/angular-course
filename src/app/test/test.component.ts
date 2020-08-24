@@ -7,7 +7,7 @@ import { getCurrencySymbol } from '@angular/common';
   styleUrls: ['./test.component.css'],
 })
 export class TestComponent implements OnInit {
-  name = '';
+  displayName = false;
   constructor() {}
   ngOnInit(): void {}
 }
