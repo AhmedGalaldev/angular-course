@@ -1,4 +1,4 @@
-<p>test works!</p>
-<!-- <h1 class="text-success">class binding</h1> -->
-<!-- <h1 [class.text-error]="hasError">class binding</h1> -->
-<h1 [ngClass]="messageClass">class binding</h1>
+<h1 [style.color]="'red'">Style binding</h1>
+<h1 [style.color]="hasError ? 'red' : 'green'">Style binding</h1>
+<h1 [style.color]="highlightColor">Style binding</h1>
+<h1 [ngStyle]="titleStyle">Style binding</h1>
