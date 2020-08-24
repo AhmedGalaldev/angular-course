@@ -1,5 +1,5 @@
-<div [ngSwitch]="color">
-  <div *ngSwitchCase="'red'" [style.color]="'red'">red</div>
-  <div *ngSwitchCase="'green'" [style.color]="'green'">green</div>
-  <div *ngSwitchDefault>default</div>
+<div *ngFor="let color of colors; index as i">
+  <h2 [style.color]="color">{{ i }} {{ color }}</h2>
 </div>
+
+<!-- first last odd even ===============> true or fasle uses like index -->
