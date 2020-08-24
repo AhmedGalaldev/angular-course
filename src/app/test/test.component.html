@@ -1,2 +1,2 @@
-<input type="text" #myIputRef />
-<button (click)="logMessage(myIputRef.value)">log</button>
+<input type="text" [(ngModel)]="name" />
+<h2>{{ name }}</h2>
