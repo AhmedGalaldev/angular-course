@@ -7,7 +7,7 @@ import { getCurrencySymbol } from '@angular/common';
   styleUrls: ['./test.component.css'],
 })
 export class TestComponent implements OnInit {
-  public color = 'green';
+  public colors = ['red', 'green', 'blue'];
   constructor() {}
   ngOnInit(): void {}
 }
